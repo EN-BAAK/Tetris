@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tetris Game</title>
+        <!-- Render All Elements Noramlly -->
+        <link rel="stylesheet" href="./Style/normalize.css" />
+        <!-- Font Awesome Library -->
+        <link rel="stylesheet" href="./Style/icons/CSS/all.min.css" />
+        <!-- Main Template Css File -->
+        <link rel="stylesheet" href="./Style/style.css" />
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <!-- Start Login -->
+        <div class="login">
+            <div class="box">
+                <h1>Puzzle Game</h1>
+                <form>
+                    <div class="err">
+                        <span class="err-empty">The Name Should Not Be Empty</span>
+                        <span class="err-same">This Name Is Valid</span>
+                    </div>
+                    <div class="player-name">
+                        <input class="input-name" type="text" placeholder="Your Name" maxlength="12" />
+                    </div>
+                    <div class="player-level">
+                        <input
+                            type="radio"
+                            name="players-level"
+                            id="easy"
+                            value="Easy"
+                            checked
+                        />
+                        <label for="easy">Easy</label>
+                        <input
+                            type="radio"
+                            name="players-level"
+                            id="medium"
+                            value="Medium"
+                        />
+                        <label for="medium">Medium</label>
+                        <input
+                            type="radio"
+                            name="players-level"
+                            id="hard"
+                            value="Hard"
+                        />
+                        <label for="hard">Hard</label>
+                    </div>
+                    <div class="submit">
+                        <button class="submit-button dis" id="submit" type="button">
+                            Start Game
+                        </button>
+                    </div>
+                    <div class="players-list">
+                        <h3>Player List:</h3>
+                        <ul></ul>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- End Login -->
+        <!-- Font Awesome Library -->
+        <script src="./Style/icons/JS/all.min.js"></script>
+        <!-- Main Js File -->
+        <script src="./register_login.js"></script>
+    </body>
+</html>
